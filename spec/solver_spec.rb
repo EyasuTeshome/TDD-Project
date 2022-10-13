@@ -28,5 +28,17 @@ describe "Solver class perform mathematical operations correctly" do
       expect { solver.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
+
+  describe '#reverse' do
+    it "returns 'esrever' when given 'reverse'" do
+      expect(solver.reverse('reverse')).to eq('esrever')
+    end
+    it "returns 'dlrow' when given 'level'" do
+      expect(solver.reverse('level')).to eq('level')
+    end
+    it "returns 'hsoj' when given 'josh'" do
+      expect(solver.reverse('josh')).to eq('hsoj')
+    end
+  end
   end
 end

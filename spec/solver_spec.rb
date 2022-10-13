@@ -1,5 +1,10 @@
+require './solver'
+
+
 describe "Solver class perform mathematical operations correctly" do
   context "factorial method" do
+      solver = Solver.new
+
   describe '#factorial' do
     it 'returns 1 if the number is 0' do
       expect(solver.factorial(0)).to eq(1)

@@ -29,3 +29,6 @@ class Solver
     end
   end
 end
+
+test_1 = Solver.new
+puts test_1.reverse("michael")

@@ -3,7 +3,7 @@ class Solver
     if number.zero?
       1
     elsif number.negative?
-      raise ArgumentError, 'You entered a Negative number Pease use only Positive.'
+      raise ArgumentError, 'You entered a Negative number Please use only Positive.'
     else
       number * factorial(number - 1)
     end
@@ -25,7 +25,7 @@ class Solver
     elsif (number % 5).zero?
       'buzz'
     else
-      N.to_s
+      number.to_s
     end
   end
 end

@@ -40,5 +40,23 @@ describe "Solver class perform mathematical operations correctly" do
       expect(solver.reverse('josh')).to eq('hsoj')
     end
   end
+
+    describe '#fizzbuzz' do
+    it "returns 'fizz' if the number is 3" do
+      expect(solver.fizzbuzz(3)).to eq('fizz')
+    end
+    it "returns 'buzz' if the number is 5" do
+      expect(solver.fizzbuzz(5)).to eq('buzz')
+    end
+    it "returns 'fizzbuzz' if the number is 15" do
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+    it "returns 'fizz' if the number is 12" do
+      expect(solver.fizzbuzz(12)).to eq('fizz')
+    end
+    it "returns 'fizzbuzz' if the number is 60" do
+      expect(solver.fizzbuzz(60)).to eq('fizzbuzz')
+    end
+  end
   end
 end

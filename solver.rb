@@ -9,7 +9,7 @@ class Solver
     end
   end
 
-    def reverse(string)
+  def reverse(string)
     if string == ''
       ''
     else
@@ -17,7 +17,6 @@ class Solver
     end
   end
 
-  
   def fizzbuzz(number)
     if (number % 3).zero? && (number % 5).zero?
       'fizzbuzz'

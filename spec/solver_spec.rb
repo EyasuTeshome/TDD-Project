@@ -1,9 +1,7 @@
 require './solver'
 
-
-describe "Solver class perform mathematical operations correctly" do
-  context "factorial method" do
-      solver = Solver.new
+describe 'Solver class perform mathematical operations correctly' do
+  solver = Solver.new
 
   describe '#factorial' do
     it 'returns 1 if the number is 0' do
@@ -41,7 +39,7 @@ describe "Solver class perform mathematical operations correctly" do
     end
   end
 
-    describe '#fizzbuzz' do
+  describe '#fizzbuzz' do
     it "returns 'fizz' if the number is 3" do
       expect(solver.fizzbuzz(3)).to eq('fizz')
     end
@@ -57,6 +55,5 @@ describe "Solver class perform mathematical operations correctly" do
     it "returns 'fizzbuzz' if the number is 60" do
       expect(solver.fizzbuzz(60)).to eq('fizzbuzz')
     end
-  end
   end
 end
